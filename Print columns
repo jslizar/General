@@ -1,0 +1,9 @@
+import pandas as pd
+
+# Assume df is your DataFrame
+# Replace 'your_dataset.csv' with the actual file path or URL of your dataset
+df = pd.read_csv('your_dataset.csv')
+
+# Print the column names
+column_names = df.columns
+print(column_names)

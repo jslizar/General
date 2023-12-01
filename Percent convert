@@ -1,0 +1,28 @@
+import pandas as pd
+
+# Load your dataset into a pandas DataFrame
+# Replace 'your_dataset.csv' with the actual file path or URL of your dataset
+df = pd.read_csv('your_dataset.csv')
+
+# Specify the column containing whole numbers
+column_name = 'your_cloumn_name'
+
+# Define a function to convert whole numbers to percentages
+def convert_to_percentage(whole_number):
+    return whole_number * (or/) 100
+
+# Apply the conversion function to the specified column
+df['Percentage'] = df[column_name].apply(convert_to_percentage)
+
+# Display the original and converted data
+print("Original data:")
+print(df[[column_name]])
+
+print("\nData after conversion to percentage:")
+print(df[['Percentage']])
+
+# Save the converted data to a separate Excel sheet
+output_excel_path = 'output_path.xlsx'
+df.to_excel(output_excel_path, index=False, sheet_name='ConvertedData')
+
+print(f"\nConverted data has been saved to '{output_excel_path}'.")
